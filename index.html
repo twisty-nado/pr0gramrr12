@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr0grammer_12's place</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
+    <script
+			  src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
+			  integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM="
+			  crossorigin="anonymous"></script>
+		
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="window centerX margin-top" id="window1">
+        <div class="titlebar">
+            <div class="title">TITLE.EXE</div>
+            <div class="buttons">
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="body centerT">
+            <h2>hello and welcome to my place</h2>
+            <p>here, i exist. it's pretty cool existing ngl</p>
+            <br>
+            <button onclick="webGoto('https://www.youtube.com/c/twistynado')">YouTube</button>
+            <button onclick="webGoto('https://steamcommunity.com/id/twistynado2010/')">Steam</button>
+            <button onclick="webGoto('https://open.spotify.com/user/31kdsaisnabzluymjz2oz6wjxccu?si=63addfb9afdd4cea')">Spotify</button>
+            <button onclick="webGoto('https://www.roblox.com/users/284625870/profile')">ROBLOX</button>
+        </div>
+    </div>
+    <br>
+    <div class="window centerX margin-top" id="window1">
+        <div class="titlebar">
+            <div class="title">JUNK I DO.EXE</div>
+            <div class="buttons">
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="body centerT">
+            <h2>junk that i like to do- i guess</h2>
+            <p>mainly messing around with computers n junk;<br>i love programming (for some reason)<br>and i like listening to music</p>
+        </div>
+    </div>
+    <br>
+    <div class="window centerX margin-top" id="window1">
+        <div class="titlebar">
+            <div class="title">JUNK I LIKE.EXE</div>
+            <div class="buttons">
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="body centerT">
+            <h2>things that i like</h2>
+            <p>i like the show Murder Drones.<br>it inspired this site (episode 6)<br>i was introduced to it by PaullyBoiPlays<br>i also like talking to people, including friends<br>if you want to talk to me... go below!</p>
+        </div>
+    </div>
+    <br>
+    <div class="window centerX margin-top" id="window1">
+        <div class="titlebar">
+            <div class="title">CONTACTS.EXE</div>
+            <div class="buttons">
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="body centerT">
+            <h2>how you can talk to me</h2>
+            <p>discord: pr0gramrr_12<br>i don't use many other things but discord<br>that's your only hope.</p>
+        </div>
+    </div>
+
+    <script>
+        function webGoto(url){
+            location.href = url
+        }
+
+        jQuery.fn.center = function () {
+            this.css("position","absolute");
+            this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                        $(window).scrollTop()) + "px");
+            this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                        $(window).scrollLeft()) + "px");
+            return this;
+        }
+
+        $(function() {
+            //$("#window1").draggable({handle: ".titlebar"});
+            //$("#window1").center()
+        })
+    </script>
+</body>
+</html>

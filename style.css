@@ -1,0 +1,104 @@
+:root{
+    --main-color: #ff0;
+}
+
+body{
+    background-color: #000;
+    color: var(--main-color);
+    font-family: monospace;
+    font-weight: bolder;
+    margin: 0;
+    scrollbar-color: #000 #ff0;
+}
+
+button{
+    border: 4px double var(--main-color);
+    color: var(--main-color);
+    font-family: monospace;
+    font-weight: bolder;
+    background: none;
+    padding: 4px;
+    min-width: 70px;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+.margin-top{
+    margin-top: 64px;
+}
+
+.window{
+    display: inline-block;
+    border: 4px double var(--main-color);
+    padding: 0px;
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.titlebar{
+    border-bottom: 4px double var(--main-color);
+    display: inline-block;
+    padding: 8px;
+    width: calc(100% - 16px);
+    user-select: none;
+}
+
+.body{
+    padding: 8px;
+}
+
+.title{
+    display: inline-block;
+}
+
+.buttons{
+    display: inline-block;
+    float: right;
+}
+
+.buttons *{
+    display: inline-block;
+    padding: 0 4px 0 4px;
+    height: 15px;
+}
+
+.buttons *:hover{
+    outline: 4px double var(--main-color);
+}
+
+.blur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px) brightness(300%);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.centerX{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.centerY{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.centerXY{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centerT{
+    text-align: center;
+}
